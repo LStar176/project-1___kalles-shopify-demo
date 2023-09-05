@@ -1,0 +1,294 @@
+:root {
+  --white-color: #FFF;
+  --black-color: #000;
+  --text-color: #333;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  /* tương đương 10px | 100% tương đương 16px*/
+  line-height: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  /* tạo font theo gg font */
+  /*
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    */
+  box-sizing: border-box;
+}
+.grid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* canh  đều 2 bên*/
+  display: block;
+}
+/* tạo responsive tương ứng để áp dụng khung hình phù hợp*/
+.grid--row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -4px;
+  /* -12px trái và phải để áp dụng cho các phần tử con có padding 12px tương ứng*/
+}
+.grid--row.row-gap-0 {
+  margin: 0;
+}
+.grid--row.row-gap-0 .col {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+.col {
+  display: inline-block;
+  padding: 0 4px;
+}
+.c-0 {
+  display: none;
+}
+.c-1 {
+  flex: 0 0 calc(100%/12);
+  width: calc(100%/12);
+}
+.c- {
+  flex: 0 0 calc(100%*2/12);
+  width: calc(100%*2/12);
+}
+.c-3 {
+  flex: 0 0 calc(100%*3/12);
+  width: calc(100%*3/12);
+}
+.c-4 {
+  flex: 0 0 calc(100%*4/12);
+  width: calc(100%*4/12);
+}
+.c-5 {
+  flex: 0 0 calc(100%*5/12);
+  width: calc(100%*5/12);
+}
+.c-6 {
+  flex: 0 0 calc(100%*6/12);
+  width: calc(100%*6/12);
+}
+.c-7 {
+  flex: 0 0 calc(100%*7/12);
+  width: calc(100%*7/12);
+}
+.c-8 {
+  flex: 0 0 calc(100%*8/12);
+  width: calc(100%*8/12);
+}
+.c-9 {
+  flex: 0 0 calc(100%*9/12);
+  width: calc(100%*9/12);
+}
+.c-10 {
+  flex: 0 0 calc(100%*10/12);
+  width: calc(100%*10/12);
+}
+.c-11 {
+  flex: 0 0 calc(100%*11/12);
+  width: calc(100%*11/12);
+}
+.c-12 {
+  flex: 0 0 calc(100%);
+  width: calc(100%);
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid--row .m-1,
+  .grid--row .m-2,
+  .grid--row .m-3,
+  .grid--row .m-4,
+  .grid--row .m-5,
+  .grid--row .m-6,
+  .grid--row .m-7,
+  .grid--row .m-8,
+  .grid--row .m-9,
+  .grid--row .m-10,
+  .grid--row .m-11,
+  .grid--row .m-12 {
+    display: inline-block;
+  }
+  .grid--row .m-0 {
+    display: none;
+  }
+  .grid--row .m-1 {
+    flex: 0 0 calc(100%/12);
+    width: calc(100%/12);
+  }
+  .grid--row .m- {
+    flex: 0 0 calc(100%*2/12);
+    width: calc(100%*2/12);
+  }
+  .grid--row .m-3 {
+    flex: 0 0 calc(100%*3/12);
+    width: calc(100%*3/12);
+  }
+  .grid--row .m-4 {
+    flex: 0 0 calc(100%*4/12);
+    width: calc(100%*4/12);
+  }
+  .grid--row .m-5 {
+    flex: 0 0 calc(100%*5/12);
+    width: calc(100%*5/12);
+  }
+  .grid--row .m-6 {
+    flex: 0 0 calc(100%*6/12);
+    width: calc(100%*6/12);
+  }
+  .grid--row .m-7 {
+    flex: 0 0 calc(100%*7/12);
+    width: calc(100%*7/12);
+  }
+  .grid--row .m-8 {
+    flex: 0 0 calc(100%*8/12);
+    width: calc(100%*8/12);
+  }
+  .grid--row .m-9 {
+    flex: 0 0 calc(100%*9/12);
+    width: calc(100%*9/12);
+  }
+  .grid--row .m-10 {
+    flex: 0 0 calc(100%*10/12);
+    width: calc(100%*10/12);
+  }
+  .grid--row .m-11 {
+    flex: 0 0 calc(100%*11/12);
+    width: calc(100%*11/12);
+  }
+  .grid--row .m-12 {
+    flex: 0 0 calc(100%);
+    width: calc(100%);
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .grid--row .l-1,
+  .grid--row .l-2,
+  .grid--row .l-3,
+  .grid--row .l-4,
+  .grid--row .l-5,
+  .grid--row .l-6,
+  .grid--row .l-7,
+  .grid--row .l-8,
+  .grid--row .l-9,
+  .grid--row .l-10,
+  .grid--row .l-11,
+  .grid--row .l-12 {
+    display: inline-block;
+  }
+  .grid--row .l-0 {
+    display: none;
+  }
+  .grid--row .l-1 {
+    flex: 0 0 calc(100%/12);
+    width: calc(100%/12);
+  }
+  .grid--row .l- {
+    flex: 0 0 calc(100%*2/12);
+    width: calc(100%*2/12);
+  }
+  .grid--row .l-3 {
+    flex: 0 0 calc(100%*3/12);
+    width: calc(100%*3/12);
+  }
+  .grid--row .l-4 {
+    flex: 0 0 calc(100%*4/12);
+    width: calc(100%*4/12);
+  }
+  .grid--row .l-5 {
+    flex: 0 0 calc(100%*5/12);
+    width: calc(100%*5/12);
+  }
+  .grid--row .l-6 {
+    flex: 0 0 calc(100%*6/12);
+    width: calc(100%*6/12);
+  }
+  .grid--row .l-7 {
+    flex: 0 0 calc(100%*7/12);
+    width: calc(100%*7/12);
+  }
+  .grid--row .l-8 {
+    flex: 0 0 calc(100%*8/12);
+    width: calc(100%*8/12);
+  }
+  .grid--row .l-9 {
+    flex: 0 0 calc(100%*9/12);
+    width: calc(100%*9/12);
+  }
+  .grid--row .l-10 {
+    flex: 0 0 calc(100%*10/12);
+    width: calc(100%*10/12);
+  }
+  .grid--row .l-11 {
+    flex: 0 0 calc(100%*11/12);
+    width: calc(100%*11/12);
+  }
+  .grid--row .l-12 {
+    flex: 0 0 calc(100%);
+    width: calc(100%);
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .grid {
+    width: 100%;
+    max-width: 540px;
+  }
+  .grid--row {
+    margin: 0 -4px;
+  }
+  .col {
+    padding: 0 4px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .grid {
+    width: 100%;
+    max-width: 720px;
+  }
+  .grid--row {
+    margin: 0 -8px;
+  }
+  .col {
+    padding: 0 8px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .grid {
+    width: 100%;
+    max-width: 960px;
+  }
+  .grid--row {
+    margin: 0 -12px;
+  }
+  .col {
+    padding: 0 12px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  .grid {
+    width: 100%;
+    max-width: 1140px;
+  }
+  .grid--row {
+    margin: 0 -12px;
+  }
+  .col {
+    padding: 0 12px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .grid {
+    width: 100%;
+    max-width: 1320px;
+  }
+  .grid--row {
+    margin: 0 -12px;
+  }
+  .col {
+    padding: 0 12px;
+  }
+}

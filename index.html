@@ -1,180 +1,575 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalles Shopify</title>
-    <link rel="stylesheet" href="./Assets/CSS/styleCSS/style.css">
-    <link rel="icon" type="image/x-icon"
-        href="//demo-kalles-4-1.myshopify.com/cdn/shop/files/k-fav.jpg?v=1652178421&width=32">
+    <link rel="stylesheet" href="./Assets/CSS/styleCSS/baseCSS.css">
+    <link rel="stylesheet" href="Assets/CSS/styleCSS/style.css">
+    <link rel="shortcut icon" href="//demo-kalles-4-1.myshopify.com/cdn/shop/files/k-fav.jpg?v=1652178421&width=32"
+        type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__discount">
-            <ul class="header__contact-list">
-                <li class="list-style--none"><a href="#" class="link-style--none link-hover ">
+    <main>
+        <header>
+            <div class="discount">
+                <div class="discount__contact col l-4 m-0 c-0">
+                    <div class="phone">
                         <i class="fa-solid fa-phone"></i>
-                        <p class="header__item">+01 23456789</p>
-                    </a></li>
-                <li class="list-style--none"><a href="#" class="link-style--none link-hover ">
+                        <p class="hover"> +01 23456789 </p>
+                    </div>
+
+                    <div class="email">
                         <i class="fa-regular fa-envelope"></i>
-                        <p class="header__mail">Kalles@domain.com</p>
-                    </a></li>
-            </ul>
+                        <p class="hover"> Kalles@domain.com</p>
+                    </div>
+                </div>
 
-            <div class="header__promotion">
-                <p>Summer sale discount off <span>50%</span>! </p>
-                <a href="#" class="link-style--none link-hover ">Shop Now</a>
-            </div>
+                <div class="discount__text col l-4">
+                    <p>Summer sale discount off <span>50%</span>!</p>
+                    <a href="#" class="shop-now hover">Shop Now</a>
+                </div>
 
-            <ul class="header__right-widget">
-                <li class="list-style--none"><a href="" class="link-style--none link-hover ">
+                <div class="discount__widget col l-4">
+                    <div class="discount__location">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p class="header__location">Location</p>
-                    </a>
-                </li>
-
-                <li class="list-style--none">
-                    <label for="header__language" class="link-hover">
-                        <span>English</span>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </label>
-
-                    <input type="checkbox" id="header__language">
-
-                    <label for="header__language" class="over-lay"></label>
-
-                    <div class="box">
-                        <div><label for="header__language" href="#" class="link-hover link-style--none">English</label></div>
-                        <div><label for="header__language" href="#" class="link-hover link-style--none">Vietnam</label></div>
+                        <a href="#" class="loca hover">Location</a>
                     </div>
-                </li>
+                    <div class="discount__lang">
+                        <p class="col hover">English<i class="fa-solid fa-angle-down"></i></p>
+                    </div>
+                    <div class="discount__currency">
+                        <img src="./Assets/Img/header__right-widget/vietnam.png" alt="vnd">
+                        <p class="hover">VND<i class="fa-solid fa-angle-down"></i></p>
+                    </div>
+                </div>
+            </div>
+            <!-- DISCOUNT:  END END END END END END END END END END END END END END END END END END -->
 
-                <li class="list-style--none">
-                    <label for="header__currency" class="header__currency-flag">
-                        <img src="./Assets/Img/header__right-widget/vietnam.png" alt="vn-logo">
-                        <div class="link-hover">
-                            <p class="currency">VND</p>
-                            <i class="fa-solid fa-angle-down"></i>
+            <div class="h-logo">
+                <div class="h-logo__setting hover l-0 m-2 c-2">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="h-logo__logo col l-2 m-8 c-8">
+                    <img src="./Assets/Img/header__main/logo.png" alt="logo">
+                </div>
+
+                <nav class="h-logo__list l-8 m-0 c-0">
+                    <ul class="list">
+                        <li class="col item-demo"><a class="hover" href="#">Demo</a></li>
+                        <li class="col item-shop"><a class="hover" href="#">Shop</a></li>
+                        <li class="col item-product"><a class="hover" href="#">Product</a></li>
+                        <li class="col item-sale"><a class="hover" href="#">Sale</a></li>
+                        <li class="col item-pages"><a class="hover" href="#">Pages</a></li>
+                        <li class="col item-lookbook"><a class="hover" href="#">Lookbook</a></li>
+                        <li class="col item-blog"><a class="hover" href="#">Blog</a></li>
+                        <li class="col item-buy-theme"><a class="hover" href="#">Buy Theme</a></li>
+                    </ul>
+
+                </nav>
+
+                <div class="h-logo__widget l-2 m-2 c-2">
+                    <i class=" fa-solid fa-magnifying-glass col "></i>
+                    <div class="c-0">
+                        <i class=" fa-regular fa-user col"></i>
+                    </div>
+                    <div class="c-0">
+                        <i class=" fa-regular fa-heart heart col c-0 "></i>
+                    </div>
+                    <i class=" fa-solid fa-cart-shopping cart col "></i>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER: END END END END END END END END END END END END END END END END END END -->
+
+        <div class="slider">
+            <img src="Assets/Img/main/slider.png" alt="cover-img">
+            <div class="slider__text">
+                <p class="summer">Summer 2023</p>
+                <h2 class="new-arrival">New Arrival Collection</h2>
+                <button class="explore">Explpore Now</button>
+            </div>
+        </div>
+        <!-- SLIDER: END END END END END END END END END END END END END END END END END -->
+
+        <div class="container grid--fit">
+            <section class="sec-1 grid--row">
+                <div class="column-1 col l-6 m-6 c-12">
+                    <div class="img">
+                        <div class="sec-1-img-1"
+                            style="background-image: url('https://demo-kalles-4-1.myshopify.com/cdn/shop/files/1_2a9471ff-024d-40f7-a4b3-a15a058ff334_2022-03-24.jpg?v=1652056987&width=400')">
                         </div>
-                    </label>
 
-                    <input type="checkbox" id="header__currency">
-
-                    <label for="header__currency" class="over-lay"></label>
-
-                    <div class="box box--position-top">
-                        <div><label for="header__currency" href="#" class="header__currency-flag">
-                            <img src="./Assets/Img/header__right-widget/canada.png"  alt="canada">
-                            <div class="link-hover">
-                                <p class="currency">Canada - CND$</p>
-                            </div>
-                        </label></div>
-
-                        <div><label for="header__currency" href="#" class="header__currency-flag">
-                            <img src="./Assets/Img/header__right-widget/france.png"  alt="france">
-                            <div class="link-hover">
-                                <p class="currency">France - EUR€</p>
-                            </div>
-                        </label></div>
-
-                        <div><label for="header__currency" href="#" class="header__currency-flag">
-                            <img src="./Assets/Img/header__right-widget/germany.png"  alt="germany">
-                            <div class="link-hover">
-                                <p class="currency">Germany - EUR€</p>
-                            </div>
-                        </label></div>
-
-                        <div><label for="header__currency" href="#" class="header__currency-flag">
-                            <img src="./Assets/Img/header__right-widget/japan.png"  alt="japan">
-                            <div class="link-hover">
-                                <p class="currency">Japan - JPY¥</p>
-                            </div>
-                        </label></div>
-
-                        <div><label for="header__currency" href="#" class="header__currency-flag">
-                            <img src="./Assets/Img/header__right-widget/new zealand.png"  alt="new-zealand">
-                            <div class="link-hover">
-                                <p class="currency">New Zealand - NZD$</p>
-                            </div>
-                        </label></div>
-
-                        <div><label for="header__currency" href="#" class="header__currency-flag">
-                            <img src="./Assets/Img/header__right-widget/uk.png"  alt="UK">
-                            <div class="link-hover">
-                                <p class="currency">United Kingdom - GBP£</p>
-                            </div>
-                        </label></div>
-
-                        <div><label for="header__currency" href="#" class="header__currency-flag">
-                            <img src="./Assets/Img/header__right-widget/usa.png"  alt="US">
-                            <div class="link-hover">
-                                <p class="currency">United States - USD$</p>
-                            </div>
-                        </label></div>
-
-                        <div><label for="header__currency" href="#" class="header__currency-flag">
-                            <img src="./Assets/Img/header__right-widget/vietnam.png"  alt="vietnam">
-                            <div class="link-hover">
-                                <p class="currency">Vietnam - VND₫</p>
-                            </div>
-                        </label></div>
+                        <button class="btn-pic m-0">Women</button>
                     </div>
-                    
-                </li>
-            </ul>
+                </div>
+
+                <div class="column-2 col l-3">
+                    <div class="img">
+                        <div class="sec-1-img-2"
+                            style="background-image: url('https://demo-kalles-4-1.myshopify.com/cdn/shop/files/2_2022-03-02.jpg?v=1652057671&width=200')">
+                        </div>
+
+                        <button class="btn-pic m-0">Accessories</button>
+                    </div>
+
+                    <div class="img">
+                        <div class="sec-1-img-2"
+                            style="background-image: url('https://demo-kalles-4-1.myshopify.com/cdn/shop/files/3_2022-03-02.jpg?v=1652057690&width=200')">
+                        </div>
+
+                        <button class="btn-pic m-0">Footwear</button>
+                    </div>
+                </div>
+                <div class="column-3 col l-3">
+                    <div class="img">
+                        <div class="sec-1-img-3"
+                            style="background-image: url('https://demo-kalles-4-1.myshopify.com/cdn/shop/files/4_f8612457-70c3-4a0f-b808-0f322a71741c_2022-03-02.jpg?v=1652057727&width=400')">
+                        </div>
+
+                        <button class="btn-pic m-0">Watches</button>
+                    </div>
+                </div>
+            </section>
+            <!-- SEC-1: END END END END END END END END END END END END END END END END -->
+
+            <!-- TRENDING -->
+            <section class="sec-2">
+                <div class="trending grid--row">
+                    <div class="trending__css col l-12 m-12 c-12">
+                        <div class="trending__trending col l-12 m-12 c-12">
+                            <span class="dash dash-left"></span>
+                            <h3>TRENDING</h3>
+                            <span class="dash dash-right"></span>
+                        </div>
+
+                        <p class="col l-12 m-12 c-12">Top view in this week</p>
+
+                    </div>
+                </div>
+
+                <div class="product-list grid--row">
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-1">
+                            <div class="new-sale new"></div>
+                        </div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p>731.000₫</p>
+
+                            <input type="radio" name="img-1-color" id="img-1-color" class="img-type img-color">
+                            <label for="img-1-color" class="none-display"></label>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-2"></div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p>878.000₫</p>
+
+                            <input type="radio" name="img-1-color" id="img-1-color" class="img-type img-color">
+                            <label for="img-1-color" class="none-display"></label>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-3"></div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p>366.000₫</p>
+
+                            <div style="margin-left: -2px;">
+                                <input type="radio" name="img-3-color" id="img-3-color1" class="img-type img-color"
+                                    checked>
+                                <label for="img-3-color1"></label>
+                                <input type="radio" name="img-3-color" id="img-3-color2" class="img-type img-color">
+                                <label for="img-3-color2"></label>
+                                <input type="radio" name="img-3-color" id="img-3-color3" class="img-type img-color">
+                                <label for="img-3-color3"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-4">
+                            <div class="new-sale sale-25"></div>
+                        </div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p style="text-decoration: line-through;"> 1.462.000₫</p>
+                            <span style="color: #ec0101;">1.097.000₫</span>
+
+                            <div style="margin-left: -2px;">
+                                <input checked type="radio" name="img-4-color" id="img-4-color1"
+                                    class="img-type img-color">
+                                <label for="img-4-color1"></label>
+                                <input type="radio" name="img-4-color" id="img-4-color2" class="img-type img-color">
+                                <label for="img-4-color2"></label>
+                                <input type="radio" name="img-4-color" id="img-4-color3" class="img-type img-color">
+                                <label for="img-4-color3"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-5"></div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p>1.657.000₫</p>
+
+                            <div style="margin-left: -2px;">
+                                <input type="radio" name="img-5-color" id="img-5-color1" class="img-type img-color">
+                                <label for="img-5-color1"></label>
+                                <input type="radio" name="img-5-color" id="img-5-color2" class="img-type img-color"
+                                    checked>
+                                <label for="img-5-color2"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-6">
+                            <div class="new-sale sale-33"></div>
+                        </div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p style="text-decoration: line-through;"> 1.462.000₫</p>
+                            <span style="color: #ec0101;">975.000₫</span>
+
+                            <div style="margin-left: -2px;">
+                                <input checked type="radio" name="img-6-color" id="img-6-color1"
+                                    class="img-type img-color">
+                                <label for="img-6-color1"></label>
+                                <input type="radio" name="img-6-color" id="img-6-color2" class="img-type img-color">
+                                <label for="img-6-color2"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-7"></div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p>853.000₫</p>
+
+                            <input type="radio" name="img-1-color" id="img-1-color" class="img-type img-color">
+                            <label for="img-1-color" class="none-display"></label>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-8"></div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p>1.219.000₫</p>
+                            <input type="radio" name="img-1-color" id="img-1-color" class="img-type img-color">
+                            <label for="img-1-color" class="none-display"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec-2 grid--row">
+                    <div class="load-more col l-12 m-12 c-12">
+                        <button class="load-more-btn">Load More</button>
+                    </div>
+                </div>
+
+            </section>
+            <!-- SEC-2: END END END END END END END END END END END END END END END -->
+
+            <!-- LOOK BOOK -->
+            <section class="sec-3">
+                <div class="look-book grid--row">
+                    <div class="img-left col l-6">
+                        <div class="img">
+                            <img src="https://demo-kalles-4-1.myshopify.com/cdn/shop/files/5_2022-03-02.jpg?v=1652057918&width=400"
+                                alt="" class="img1">
+                        </div>
+                        <div class="desc">
+                            <h3>Look book 2023</h3>
+                            <p> make love this look</p>
+                        </div>
+
+                    </div>
+
+                    <div class="img-right col l-6">
+                        <div class="img">
+                            <img src="https://demo-kalles-4-1.myshopify.com/cdn/shop/files/6_2022-03-02.jpg?v=1652057917&width=400"
+                                alt="" class="img2">
+                        </div>
+                        <div class="desc">
+                            <p> summer sale</p>
+                            <h3 class="up-sale">up to 70%</h3>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- SEC-3: END END END END END END END END END END END END END END END -->
+
+            <!-- BEST SELLER -->
+            <section class="sec-4">
+                <div class="best-seller grid--row">
+                    <div class="best-seller__same-css trending col l-12 m-12 c-12">
+                        <div class="trending__trending col l-12 m-12 c-12">
+                            <span class="dash dash-left"></span>
+                            <h3>BEST SELLER</h3>
+                            <span class="dash dash-right"></span>
+                        </div>
+
+                        <p class="col l-12 m-12 c-12">Top sale this week</p>
+
+                    </div>
+                </div>
+
+                <div class="product-list grid--row">
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-1">
+                            <div class="new-sale new"></div>
+                        </div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p>731.000₫</p>
+
+                            <input type="radio" name="sec-4__img-1-color" id="sec-4__img-1-color"
+                                class="img-type img-color">
+                            <label for="sec-4__img-1-color" class="none-display"></label>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-2"></div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p>878.000₫</p>
+
+                            <input type="radio" name="sec-4__img-1-color" id="sec-4__img-1-color"
+                                class="img-type img-color">
+                            <label for="sec-4__img-1-color" class="none-display"></label>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-3"></div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p>366.000₫</p>
+
+                            <div style="margin-left: -2px;">
+                                <input checked type="radio" name="sec-4__img-3-color" id="sec-4__img-3-color1"
+                                    class="img-type img-color">
+                                <label for="sec-4__img-3-color1"></label>
+                                <input type="radio" name="sec-4__img-3-color" id="sec-4__img-3-color2"
+                                    class="img-type img-color">
+                                <label for="sec-4__img-3-color2"></label>
+                                <input type="radio" name="sec-4__img-3-color" id="sec-4__img-3-color3"
+                                    class="img-type img-color">
+                                <label for="sec-4__img-3-color3"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-4">
+                            <div class="new-sale sale-25"></div>
+                        </div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p style="text-decoration: line-through;"> 1.462.000₫</p>
+                            <span style="color: #ec0101;">1.097.000₫</span>
+
+                            <div style="margin-left: -2px;">
+                                <input checked type="radio" name="sec-4__img-4-color" id="sec-4__img-4-color1"
+                                    class="img-type img-color">
+                                <label for="sec-4__img-4-color1"></label>
+                                <input type="radio" name="sec-4__img-4-color" id="sec-4__img-4-color2"
+                                    class="img-type img-color">
+                                <label for="sec-4__img-4-color2"></label>
+                                <input type="radio" name="sec-4__img-4-color" id="sec-4__img-4-color3"
+                                    class="img-type img-color">
+                                <label for="sec-4__img-4-color3"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-5"></div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p>1.657.000₫</p>
+
+                            <div style="margin-left: -2px;">
+                                <input checked type="radio" name="sec-4__img-5-color" id="sec-4__img-5-color1"
+                                    class="img-type img-color">
+                                <label for="sec-4__img-5-color1"></label>
+                                <input type="radio" name="sec-4__img-5-color" id="sec-4__img-5-color2"
+                                    class="img-type img-color">
+                                <label for="sec-4__img-5-color2"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-6">
+                            <div class="new-sale sale-33"></div>
+                        </div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p style="text-decoration: line-through;"> 1.462.000₫</p>
+                            <span style="color: #ec0101;">975.000₫</span>
+
+                            <div style="margin-left: -2px;">
+                                <input checked type="radio" name="sec-4__img-6-color" id="sec-4__img-6-color1"
+                                    class="img-type img-color">
+                                <label for="sec-4__img-6-color1"></label>
+                                <input type="radio" name="sec-4__img-6-color" id="sec-4__img-6-color2"
+                                    class="img-type img-color">
+                                <label for="sec-4__img-6-color2"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-7"></div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p>853.000₫</p>
+
+                            <input type="radio" name="sec-4__img-1-color" id="sec-4__img-1-color"
+                                class="img-type img-color">
+                            <label for="sec-4__img-1-color" class="none-display"></label>
+                        </div>
+                    </div>
+                    <div class="product-item col l-3 m-4 c-6">
+                        <div class="product-img img-8"></div>
+                        <div class="img-desc">
+                            <h3>Analogue Resin Strap</h3>
+                            <p>1.219.000₫</p>
+                            <input type="radio" name="sec-4__img-1-color" id="sec-4__img-1-color"
+                                class="img-type img-color">
+                            <label for="sec-4__img-1-color" class="none-display"></label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec-5">
+                <div class="lates-from-blog grid--row">
+                    <div class="lates-from-blog-css trending col l-12 m-12 c-12">
+                        <div class="trending__trending col l-12 m-12 c-12">
+                            <span class="dash dash-left"></span>
+                            <h3>LATES FROM BLOG</h3>
+                            <span class="dash dash-right"></span>
+                        </div>
+
+                        <p class="col l-12 m-12 c-12">The freshest and most exciting news</p>
+
+                    </div>
+                </div>
+
+                <div class="blog grid--row">
+                    <div class="blog-item col l-4">
+                        <div class="img__overflow-hidden">
+                            <img src="https://demo-kalles-4-1.myshopify.com/cdn/shop/articles/1-7-1.jpg?v=1653267169&width=400"
+                                alt="img" class="blog-img">
+
+                        </div>
+                        <div class="blog-desc">
+                            <a href="" class="heading hover">Spring – Summer Trending 2020</a>
+                            <p class="date">By <strong>admin</strong> on <strong>May 11, 2022</strong></p>
+                            <p class="detail">Typography is the work of typesetters, compositors, typographers, graphic
+                                designers, art directors, manga artists, ...</p>
+                        </div>
+                    </div>
+                    <div class="blog-item col l-4">
+                        <div class="img__overflow-hidden">
+                            <img src="https://demo-kalles-4-1.myshopify.com/cdn/shop/articles/2_18a7b802-d113-43bd-9e51-78373333370c-7-1.jpg?v=1653267096&width=400"
+                                alt="img" class="blog-img">
+
+                        </div>
+                        <div class="blog-desc">
+                            <a href="" class="heading hover">The Easiest Way to Break Out on Top</a>
+                            <p class="date">By <strong>admin</strong> on <strong>May 11, 2022</strong></p>
+                            <p class="detail">Typography is the work of typesetters, compositors, typographers, graphic
+                                designers, art directors, manga artists, ...</p>
+                        </div>
+                    </div>
+                    <div class="blog-item col l-4">
+                        <div class="img__overflow-hidden">
+                            <img src="https://demo-kalles-4-1.myshopify.com/cdn/shop/articles/couple-7-1.jpg?v=1653267115&width=400"
+                                alt="img" class="blog-img">
+
+                        </div>
+                        <div class="blog-desc">
+                            <a href="" class="heading hover">Style for couple in Weeding season</a>
+                            <p class="date">By <strong>admin</strong> on <strong>May 11, 2022</strong></p>
+                            <p class="detail">Typography is the work of typesetters, compositors, typographers, graphic
+                                designers, art directors, manga artists, ...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="sec-6">
+                <div class="follow-ins grid--row">
+                    <div class="follow-ins-css trending col l-12 m-12 c-12">
+                        <div class="trending__trending col l-12 m-12 c-12">
+                            <span class="dash dash-left"></span>
+                            <h3>@ FOLLOW US ON INSTAGRAM</h3>
+                            <span class="dash dash-right"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
         </div>
-        <!-- Header__discount: END -->
-
-        <div class="header__main">
-            <div class="panel">
-                <i class="link-style--none link-hover fa-solid fa-sliders"></i>
+        <div class="follow-ins__img">
+            <div class="follow-ins__img1 l-2">
+                <img src="https://demo-kalles-4-1.myshopify.com/cdn/shop/files/ins8_2022-03-02.jpg?v=1652058019&width=400"
+                    alt="img1" class="follow-img">
             </div>
-
-            <div class="header__logo"> <img src="Assets/Img/header__main/logo.png" alt="Logo"></div>
-
-            <div class="navigation">
-                <ul class="list__items">
-                    <li class="list-style--none"><a class="link-style--none link-hover" href="#" id="demo">Demo</a></li>
-                    <li class="list-style--none"><a class="link-style--none link-hover" href="#" id="shop">Shop <span>New</span></a></li>
-                    <li class="list-style--none"><a class="link-style--none link-hover" href="#" id="product">Product</a></li>
-                    <li class="list-style--none"><a class="link-style--none link-hover" href="#" id="sale">Sale<span  class="span--bgYellow">Sale</span></a></li>
-                    <li class="list-style--none"><a class="link-style--none link-hover" href="#" id="pages">Pages</a></li>
-                    <li class="list-style--none"><a class="link-style--none link-hover" href="#" id="lookbook">Lookbook</a></li>
-                    <li class="list-style--none"><a class="link-style--none link-hover" href="#" id="blog">Blog</a></li>
-                    <li class="list-style--none"><a class="link-style--none link-hover" href="#" id="buy__theme">Buy Theme</a></li>
-                </ul>
+            <div class="follow-ins__img1 l-2">
+                <img src="https://demo-kalles-4-1.myshopify.com/cdn/shop/files/ins7_2022-03-02.jpg?v=1652058019&width=400"
+                    alt="img1" class="follow-img">
             </div>
-
-            <div class="header__right-widget">
-                <ul class="list__items">
-                    <li class="list-style--none"><a href="#" class="link-style--none link-hover">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a></li>
-                    <li class="list-style--none"><a href="#" class="link-style--none link-hover">
-                        <i class="fa-regular fa-user"></i>
-                    </a></li>
-                    <li class="list-style--none"><a href="#" class="link-style--none link-hover">
-                        <i class="fa-regular fa-heart"></i>
-                        <span>0</span>
-                    </a></li>
-                    <li class="list-style--none"><a href="#" class="link-style--none link-hover">
-                        <i class="fa-solid fa-cart-arrow-down"></i>
-                        <span>0</span>
-                    </a></li>
-                </ul>
+            <div class="follow-ins__img1 l-2">
+                <img src="https://demo-kalles-4-1.myshopify.com/cdn/shop/files/ins6_2022-03-02.jpg?v=1652058019&width=400"
+                    alt="img1" class="follow-img">
             </div>
+            <div class="follow-ins__img1 l-2">
+                <img src="https://demo-kalles-4-1.myshopify.com/cdn/shop/files/ins5_2022-03-02.jpg?v=1652058019&width=400"
+                    alt="img1" class="follow-img">
+            </div>
+            <div class="follow-ins__img1 l-2">
+                <img src="https://demo-kalles-4-1.myshopify.com/cdn/shop/files/ins4_2022-03-02.jpg?v=1652058019&width=400"
+                    alt="img1" class="follow-img">
+            </div>
+            <div class="follow-ins__img1 l-2">
+                <img src="https://demo-kalles-4-1.myshopify.com/cdn/shop/files/ins3_2022-03-02.jpg?v=1652058019&width=400"
+                    alt="img1" class="follow-img">
+            </div>
+            <div class="clear"></div>
         </div>
-    </header>
 
-    <main> </main>
-    <footer> </footer>
+        <footer class="grid--fit">
+            <section class="footer-header grid--row">
+                <div class="free-shipping col l-3">
+                    <div class="icon l-3">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
 
+                    <div class="free-shipping__desc l-9">
+                        <div class="head">FREE SHIPPING</div>
+                        <div class="contain">Free shipping on all US order or order above $100</div>
+                    </div>
+                </div>
+            </section>
 
-    <script src="./Assets/JS/main.js"></script>
+            <section class="footer-main"></section>
+
+            <section class="footer-footer"></section>
+        </footer>
+    </main>
     <script src="https://kit.fontawesome.com/318b8561a2.js" crossorigin="anonymous"></script>
+    <script src="Assets/JS/main.js"></script>
 </body>
 
 </html>

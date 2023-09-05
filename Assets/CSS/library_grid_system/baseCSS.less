@@ -1,0 +1,404 @@
+//out: "../styleCSS/baseCSS.css", compress: true, sourceMap: true
+:root {
+    --white-color: #FFF;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    /* tương đương 10px | 100% tương đương 16px*/
+    line-height: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    /* tạo font theo gg font */
+    /*
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    */
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 100%;
+    //max-width: 1200px; /* áp dụng màn hình resolution 1296 x 1024*/
+    margin-left: auto;
+    margin-right: auto;
+    /* canh  đều 2 bên*/
+    display: block;
+
+}
+
+/* tạo responsive tương ứng để áp dụng khung hình phù hợp*/
+
+.grid--row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -4px;
+    /* -12px trái và phải để áp dụng cho các phần tử con có padding 12px tương ứng*/
+}
+
+.col {
+    display: block;
+    flex: 1;
+    padding: 0 4px;
+}
+
+.row-gap-0 {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .col {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+
+// Mobile @media
+
+
+
+@media only screen and (max-width: 769px) {
+
+    body {
+
+        .c-0 {
+            display: none;
+        }
+
+        .c-1 {
+            flex: 0 0 calc(100%/12);
+            width: calc(100%/12);
+        }
+
+        .c-2 {
+            flex: 0 0 calc(100%*2/12);
+            width: calc(100%*2/12);
+        }
+
+        .c-3 {
+            flex: 0 0 calc(100%*3/12);
+            width: calc(100%*3/12);
+        }
+
+        .c-4 {
+            flex: 0 0 calc(100%*4/12);
+            width: calc(100%*4/12);
+        }
+
+        .c-5 {
+            flex: 0 0 calc(100%*5/12);
+            width: calc(100%*5/12);
+        }
+
+        .c-6 {
+            flex: 0 0 calc(100%*6/12);
+            width: calc(100%*6/12);
+        }
+
+        .c-7 {
+            flex: 0 0 calc(100%*7/12);
+            width: calc(100%*7/12);
+        }
+
+        .c-8 {
+            flex: 0 0 calc(100%*8/12);
+            width: calc(100%*8/12);
+        }
+
+        .c-9 {
+            flex: 0 0 calc(100%*9/12);
+            width: calc(100%*9/12);
+        }
+
+        .c-10 {
+            flex: 0 0 calc(100%*10/12);
+            width: calc(100%*10/12);
+        }
+
+        .c-11 {
+            flex: 0 0 calc(100%*11/12);
+            width: calc(100%*11/12);
+        }
+
+        .c-12 {
+            flex: 0 0 calc(100%);
+            width: calc(100%);
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+
+    .m-1,
+    .m-2,
+    .m-3,
+    .m-4,
+    .m-5,
+    .m-6,
+    .m-7,
+    .m-8,
+    .m-9,
+    .m-10,
+    .m-11,
+    .m-12 {
+        display: block;
+    }
+
+    .m-0 {
+        display: none;
+    }
+
+    .m-1 {
+        flex: 0 0 calc(100%/12);
+        width: calc(100%/12);
+    }
+
+    .m-2 {
+        flex: 0 0 calc(100%*2/12);
+        width: calc(100%*2/12);
+    }
+
+    .m-3 {
+        flex: 0 0 calc(100%*3/12);
+        width: calc(100%*3/12);
+    }
+
+    .m-4 {
+        flex: 0 0 calc(100%*4/12);
+        width: calc(100%*4/12);
+    }
+
+    .m-5 {
+        flex: 0 0 calc(100%*5/12);
+        width: calc(100%*5/12);
+    }
+
+    .m-6 {
+        flex: 0 0 calc(100%*6/12);
+        width: calc(100%*6/12);
+    }
+
+    .m-7 {
+        flex: 0 0 calc(100%*7/12);
+        width: calc(100%*7/12);
+    }
+
+    .m-8 {
+        flex: 0 0 calc(100%*8/12);
+        width: calc(100%*8/12);
+    }
+
+    .m-9 {
+        flex: 0 0 calc(100%*9/12);
+        width: calc(100%*9/12);
+    }
+
+    .m-10 {
+        flex: 0 0 calc(100%*10/12);
+        width: calc(100%*10/12);
+    }
+
+    .m-11 {
+        flex: 0 0 calc(100%*11/12);
+        width: calc(100%*11/12);
+    }
+
+    .m-12 {
+        flex: 0 0 calc(100%);
+        width: calc(100%);
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .l-1,
+    .l-2,
+    .l-3,
+    .l-4,
+    .l-5,
+    .l-6,
+    .l-7,
+    .l-8,
+    .l-9,
+    .l-10,
+    .l-11,
+    .l-12 {
+        display: block;
+    }
+
+    .l-0 {
+        display: none;
+    }
+
+    .l-1 {
+        flex: 0 0 calc(100%/12);
+        width: calc(100%/12);
+    }
+
+    .l-2 {
+        flex: 0 0 calc(200%/12);
+        width: calc(200%/12);
+    }
+
+    .l-3 {
+        flex: 0 0 calc(300%/12);
+        width: calc(300%/12);
+    }
+
+    .l-4 {
+        flex: 0 0 calc(400%/12);
+        width: calc(400%/12);
+    }
+
+    .l-5 {
+        flex: 0 0 calc(500%/12);
+        width: calc(500%/12);
+    }
+
+    .l-6 {
+        flex: 0 0 calc(600%/12);
+        width: calc(600%/12);
+    }
+
+    .l-7 {
+        flex: 0 0 calc(700%/12);
+        width: calc(700%/12);
+    }
+
+    .l-8 {
+        flex: 0 0 calc(800%/12);
+        width: calc(800%/12);
+    }
+
+    .l-9 {
+        flex: 0 0 calc(900%/12);
+        width: calc(900%/12);
+    }
+
+    .l-10 {
+        flex: 0 0 calc(1000%/12);
+        width: calc(1000%/12);
+    }
+
+    .l-11 {
+        flex: 0 0 calc(1100%/12);
+        width: calc(1100%/12);
+    }
+
+    .l-12 {
+        flex: 0 0 calc(100%);
+        width: calc(100%);
+    }
+}
+
+
+@media only screen and (min-width: 576px) and (max-width:767px) {
+    .grid {
+        width: 100%;
+        max-width: 540px;
+    }
+
+    .grid--row {
+        margin: 0 -4px;
+
+    }
+
+    .col {
+        padding: 0 4px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    .grid {
+        width: 100%;
+        max-width: 720px;
+    }
+
+    .grid--row {
+        margin: 0 -12px;
+
+    }
+
+    .col {
+        padding: 0 12px; // chinhr cho thanhf 12 ko pahi 8px
+    }
+}
+
+// @media only screen and (min-width: 768px) and (max-width:991px) {
+//     .grid {
+//         width: 100%;
+//         max-width: 720px;
+//     }
+
+//     .grid--row {
+//         margin: 0 -8px;
+
+//     }
+
+//     .col {
+//         padding: 0 8px;
+//     }
+// }
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+    .grid {
+        width: 100%;
+        max-width: 960px;
+    }
+
+    .grid--row {
+        margin: 0 -12px;
+
+    }
+
+    .col {
+        padding: 0 12px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1439px) {
+    .grid {
+        width: 100%;
+        max-width: 1140px;
+    }
+
+    .grid--row {
+        margin: 0 -12px;
+
+    }
+
+    .col {
+        padding: 0 12px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .grid {
+        width: 100%;
+        max-width: 1320px;
+    }
+
+    .grid--row {
+        margin: 0 -12px;
+    }
+
+    .col {
+        padding: 0 12px;
+    }
+
+}
