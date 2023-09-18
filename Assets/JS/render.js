@@ -55,12 +55,13 @@ function isSize(pro, parent) {
         sizeRow.className = 'grid--row';
 
         function isSizeLabelClick(pro, parent) {
+            let i = 0;
             for (var label of pro.size) {
                 const column = document.createElement('div');
                 column.className = 'col l-2 m-2 c-2';
-                column.innerHTML = `<input type="radio" name="${pro.id}-size" id="${size}_size">`;
+                column.innerHTML = `<input type="radio" name="${pro.id}-size" id="${pro.id}_size_${i}">`;
                 const labelList = document.createElement('label');
-                labelList.htmlFor = `${pro.id}_sizes`;
+                labelList.htmlFor = `${pro.id}_size_${i}`;
                 const labelClick = document.createElement('div');
                 labelClick.className = 'border';
                 labelClick.innerHTML = label;
@@ -68,6 +69,7 @@ function isSize(pro, parent) {
                 parent.appendChild(column);
                 column.appendChild(labelList);
                 labelList.appendChild(labelClick);
+                i++;
             }
 
         }
@@ -134,8 +136,8 @@ function overlayBtn(products, parent) {
 function renderList(products, position) {
     const elProducts = position
     elProducts.innerHTML = '';
-
-    for (let i = 0; i < 8; i++) {
+    let i = 0;
+    for (; i < 8; i++) {
         //create Element
         const card = document.createElement('div');
         card.className = 'card col l-3 m-4 c-6'
@@ -160,9 +162,9 @@ function renderList(products, position) {
         //QuickShop Popup__content
         quickView.innerHTML = `
         <span class="quick">Quick View</span>
-        <span class="hide-icon"><i class="fa-regular fa-eye"></i></span>`
+        <span class="hide-icon"><i class="fa-regular ${products[i].id} fa-eye"></i></span>`
         quickShop.innerHTML = ` <span class="quick">Quick Shop</span>
-        <span class="hide-icon"><i class="fa-regular fa-eye"></i></span>`
+        <span class="hide-icon"><i class="fa-regular ${products[i].id} fa-eye"></i></span>`
 
 
         //Create Element __ nested
@@ -178,11 +180,11 @@ function renderList(products, position) {
         card.appendChild(cardDesc);
         cardDesc.innerHTML = `
                     <div class="card-desc">
-                           <span class="title">${products[i].title}</span>
+                          <span class="title hover">${products[i].title}</span>
                           ${getSalePrice2(products[i])}
                     </div>`
     }
-    products.splice(0, 8)
+    i = 0;
 }
 
 const section2ListProduct = document.querySelector('.sec-2 .list-card.grid--row')
